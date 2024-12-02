@@ -1,0 +1,41 @@
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input
+        type="text"
+        placeholder="name"
+        [(ngModel)]="userLogin.username"
+        name="username"
+      />
+      <input
+        type="text"
+        placeholder="email address"
+        [(ngModel)]="userLogin.email"
+        name="email"
+      />
+      <input
+        type="password"
+        placeholder="password"
+        [(ngModel)]="userLogin.password"
+        name="password"
+      />
+
+      <button (click)="onRegister()">create</button>
+    </form>
+    <form class="login-form">
+      <input
+        type="text"
+        placeholder="username"
+        name="username"
+        [(ngModel)]="Login.username"
+      />
+      <input
+        type="password"
+        placeholder="password"
+        name="password"
+        [(ngModel)]="Login.password"
+      />
+      <button (click)="onLogin()">login</button>
+    </form>
+  </div>
+</div>
